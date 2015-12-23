@@ -1,2 +1,7 @@
-#!/usr/bin/env python
-print("Hello World")
+# Python 3 program to read an integer from STDIN and output it to STDOUT
+
+# Read the variable from STDIN
+a = int(input())
+
+# Output the variable to STDOUT
+print(a)

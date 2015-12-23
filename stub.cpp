@@ -1,8 +1,21 @@
+// C++ program to read an integer from STDIN and output it to STDOUT
+#include <cstdio>
 #include <iostream>
-#include <cstdlib>
+#include <algorithm>
+#include <cmath>
+#include <vector>
 
-int main()
-{
-	std::cout << "Hello World" << std::endl;
-	return EXIT_SUCCESS;
+using namespace std;
+
+int main() {
+  // Declare the variable
+  int a;
+  
+  // Read the variable from STDIN
+  cin >> a;
+  
+  // Output the variable to STDOUT
+  cout << a;
+  
+  return 0;
 }
