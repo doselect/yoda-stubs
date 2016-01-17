@@ -1,9 +1,10 @@
 // Javascript program to read an integer from STDIN and output it to STDOUT
 
-function main() {
-    // Read the variable from STDIN
-    var a = parseInt(readLine());
-    
+// Read the variable from STDIN
+process.stdin.on('data', function(chunk) {
+    var lines = chunk.toString().split('\n'),
+    a = parseInt(lines[0])
     // Output the variable to STDOUT
-    console.log(a);
-}
+    console.log(a)
+})
+
