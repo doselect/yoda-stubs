@@ -1,4 +1,3 @@
-// C program to read an integer from STDIN and output it to STDOUT
 #include <stdio.h>
 
 int main()
