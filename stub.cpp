@@ -1,4 +1,3 @@
-// C++ program to read an integer from STDIN and output it to STDOUT
 #include <cstdio>
 #include <iostream>
 #include <algorithm>
