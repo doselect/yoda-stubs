@@ -1,2 +1,3 @@
 alter session set current_schema = doselect;
+SET heading OFF
 -- Write your sql queries here
