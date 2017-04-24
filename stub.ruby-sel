@@ -1,0 +1,35 @@
+require 'test/unit'
+require 'selenium-webdriver'
+
+class MyTest < Test::Unit::TestCase
+
+  # Called before every test method runs. Can be used
+  # to set up fixture information.
+  def setup
+
+    # Do not change this part. Otherwise your evaluation will fail
+    @driver=Selenium::WebDriver.for :remote, desired_capabilities: :phantomjs
+  end
+
+  # Modify this test or add more tests based on problem statement
+  def test_search
+
+    # navigate to the test site
+    @driver.navigate.to "https://www.google.com"
+    
+    element = @driver.find_element(:name, 'q')
+    element.send_keys "Selenium"
+    element.submit
+
+    # wait until the result displays, timeout in 2 seconds
+    wait = Selenium::WebDriver::Wait.new(:timeout => 2) # seconds
+    wait.until {@driver.find_element(:link_text => "Selenium - Web Browser Automation") }
+  end
+
+  def teardown
+    # quit the driver
+    @driver.quit
+  end
+
+
+end
