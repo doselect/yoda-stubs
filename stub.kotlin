@@ -1,0 +1,8 @@
+fun main(args: Array<String>) {
+  // Read the variable from STDIN
+  val a = readLine()
+
+  // Output the variable to STDOUT
+  println(a)
+
+}
