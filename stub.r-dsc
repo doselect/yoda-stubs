@@ -2,21 +2,23 @@
 # library(caret)
 # library(klaR)
 
-# Read datasets
+# [Example] Read datasets
 # data_train = read.csv("/data/training/iris_train.csv")
 # data_test = read.csv("/data/test/iris_test.csv")
 
 # User can save any number of plots to `/code/output` directory
-# This will be visible in the reports
+# Note that only the plots saved in /code/output will be visible to you
+# So make sure you save each plot as shown below
+# Uncomment the below 3 lines and give it a try
 # png(filename = "/code/output/pairs.png")
 # pairs(iris[1:4], pch = 21, bg = c("red", "green3", "blue")[unclass(iris$Species)])
 # dev.off()
 
 # Build model
 
-# Generate the predictions
+# [Example] Generate the predictions
 # predictions = predict(model, data_test)
 # data_test$Species = predictions$class
 
-# Write the output file in the required format
+# [Example] Write the output file in the required format
 # write.csv(data_test[,c("id","Species")],file = "/code/iris_prediction.csv",quote = FALSE,row.names = FALSE)
