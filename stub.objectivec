@@ -2,6 +2,9 @@
 
 int main(void)
 {
+    NSInteger n;
+    
+    scanf("%ld", &n);
     //Don't use NSLog. Use printf instead.
-    printf("Hello World");
+    printf("%ld\n", n);
 }
