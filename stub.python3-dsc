@@ -1,14 +1,22 @@
 # Import libraries here
 # import numpy as np
 # from sklearn import linear_model
+import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 
-# Read datasets
+# [Example] Read datasets
+# iris_train = pd.read_csv("/data/training/iris_train.csv")
 
 # User can save any number of plots to `/code/output` directory
-# This will be visible in the reports
+# Note that only the plots saved in /code/output will be visible to you
+# So make sure you save each plot as shown below
+# Uncomment the below 3 lines and give it a try
+# axes = pd.tools.plotting.scatter_matrix(iris_train, alpha=0.2)
+# plt.tight_layout()
+# plt.savefig('/code/output/scatter_matrix.png')
 
-# Build model
-
-# Generate the predictions
-
-# Write the output file in the required format
+# Write output file
+# Assuming iris_pred is DataFrame in the required output format
+# iris_pred.to_csv("/code/iris_prediction.csv")
