@@ -1,5 +1,10 @@
-class HelloWorld {
+using System;
+
+class Source {
 	static void Main() {
-		System.Console.WriteLine("Hello World");
+	    var line1 = System.Console.ReadLine().Trim();
+        var num = Int32.Parse(line1);
+        
+		System.Console.WriteLine(num);
 	}
 }
