@@ -1,0 +1,10 @@
+Code.compiler_options(ignore_module_conflict: true)
+
+defmodule Solution do
+	def start() do
+		IO.puts "Hello World!"
+	end
+end
+
+# You must invoke your method at the end of this script
+Solution.start
