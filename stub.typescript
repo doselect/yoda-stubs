@@ -5,10 +5,10 @@ process.stdin.setEncoding('utf-8');
 let inputString: string = '';
 
 process.stdin.on('data', function(inputStdin: string): void {
-    inputString += inputStdin;
+  inputString += inputStdin;
 });
 
 process.stdin.on('end', function(): void {
-    // now we can read/parse input
-    console.log(inputString);
+  // now we can read/parse input
+  console.log(inputString);
 });

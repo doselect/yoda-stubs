@@ -1,4 +1,16 @@
 <?php
-  /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-  print "Hello World";
+  /* Write your code with the help of following information for STDIN and STDOUT */
+
+  /* Read the variable from STDIN using the following method only. Using readline() will lead to failure of testcases */
+  $line1 = trim(fgets(STDIN));
+
+  /* fgets reads one line at a time. */
+  $line2 = trim(fgets(STDIN));
+
+  /* Output the variable to STDOUT using any of the following methods */
+  print($line1);
+
+  //OR
+
+  echo($line2);
 ?>
