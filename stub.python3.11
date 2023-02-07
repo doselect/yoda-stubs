@@ -1,0 +1,6 @@
+
+# Read the variable from STDIN
+a = int(input())
+
+# Output the variable to STDOUT
+print(a)
