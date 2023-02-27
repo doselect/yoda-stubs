@@ -1,0 +1,10 @@
+using System;
+
+class Source {
+	static void Main() {
+	    var line1 = System.Console.ReadLine().Trim();
+        var num = Int32.Parse(line1);
+        
+		System.Console.WriteLine(num);
+	}
+}
