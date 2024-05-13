@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+// Class name should be "Source",
+// otherwise solution won't be accepted
+public class Source {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+
+        // Declare the variable
+        int a;
+
+        // Read the variable from STDIN
+        a = in.nextInt();
+
+        // Output the variable to STDOUT
+        System.out.println(a);
+   }
+}
